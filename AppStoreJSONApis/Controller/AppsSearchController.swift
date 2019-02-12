@@ -28,18 +28,13 @@ class AppsSearchController: UICollectionViewController, UICollectionViewDelegate
         
         // fetch data from internet
         URLSession.shared.dataTask(with: url) { (data, resp, err) in
-            
             if let err = err {
                 print("Failed to fetch apps:", err)
                 return
             }
             
             // success
-//            print(data)
-//            print(String(data: data!, encoding: .utf8))
-            
             guard let data = data else { return }
-            
             do {
                 let searchResult = try JSONDecoder().decode(SearchResult.self, from: data)
                 
@@ -48,8 +43,6 @@ class AppsSearchController: UICollectionViewController, UICollectionViewDelegate
             } catch let jsonErr {
                 print("Failed to decode json:", jsonErr)
             }
-            
-            
             
         }.resume() // fires off the request
     }
