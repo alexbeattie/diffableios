@@ -17,6 +17,7 @@
 		C7574F962210A34600B2487A /* SearchResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7574F952210A34600B2487A /* SearchResultCell.swift */; };
 		C7574FA02212006400B2487A /* UIView+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7574F9F2212006400B2487A /* UIView+Layout.swift */; };
 		C7574FA2221204B000B2487A /* VerticalStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7574FA1221204B000B2487A /* VerticalStackView.swift */; };
+		C7574FA822124B3C00B2487A /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7574FA722124B3C00B2487A /* SearchResult.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		C7574F952210A34600B2487A /* SearchResultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultCell.swift; sourceTree = "<group>"; };
 		C7574F9F2212006400B2487A /* UIView+Layout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Layout.swift"; sourceTree = "<group>"; };
 		C7574FA1221204B000B2487A /* VerticalStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalStackView.swift; sourceTree = "<group>"; };
+		C7574FA722124B3C00B2487A /* SearchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResult.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 		C74A89CD220E472D00B61711 /* AppStoreJSONApis */ = {
 			isa = PBXGroup;
 			children = (
+				C7574FA622124B3000B2487A /* Model */,
 				C7574F9E2212005500B2487A /* Helpers */,
 				C7574F942210A32C00B2487A /* Views */,
 				C74A89E5220E91BE00B61711 /* Controller */,
@@ -101,6 +104,14 @@
 				C7574FA1221204B000B2487A /* VerticalStackView.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		C7574FA622124B3000B2487A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C7574FA722124B3C00B2487A /* SearchResult.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,6 +187,7 @@
 			files = (
 				C74A89D1220E472D00B61711 /* ViewController.swift in Sources */,
 				C74A89CF220E472D00B61711 /* AppDelegate.swift in Sources */,
+				C7574FA822124B3C00B2487A /* SearchResult.swift in Sources */,
 				C7574FA02212006400B2487A /* UIView+Layout.swift in Sources */,
 				C74A89E1220E47A600B61711 /* BaseTabBarController.swift in Sources */,
 				C74A89E7220E91DC00B61711 /* AppsSearchController.swift in Sources */,
