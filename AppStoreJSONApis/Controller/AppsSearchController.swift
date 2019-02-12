@@ -25,8 +25,6 @@ class AppsSearchController: UICollectionViewController, UICollectionViewDelegate
     
     fileprivate var appResults = [Result]()
     
-    // 2 - Extract this function fetchITunesApps() outside of this controller file
-    
     fileprivate func fetchITunesApps() {
         Service.shared.fetchApps { (results, err) in
             
@@ -40,9 +38,6 @@ class AppsSearchController: UICollectionViewController, UICollectionViewDelegate
                 self.collectionView.reloadData()
             }
         }
-        
-        // we need to get back our search results somehow
-        // use a completion block
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
