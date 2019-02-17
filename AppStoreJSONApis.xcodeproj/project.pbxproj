@@ -29,6 +29,7 @@
 		C7574FEC22174E2900B2487A /* AppsPageHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7574FEB22174E2900B2487A /* AppsPageHeader.swift */; };
 		C7574FEE22174F4900B2487A /* AppsHeaderHorizontalController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7574FED22174F4900B2487A /* AppsHeaderHorizontalController.swift */; };
 		C7574FF0221750E800B2487A /* AppsHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7574FEF221750E800B2487A /* AppsHeaderCell.swift */; };
+		C7574FF4221792DD00B2487A /* AppGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7574FF3221792DD00B2487A /* AppGroup.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +59,7 @@
 		C7574FEB22174E2900B2487A /* AppsPageHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppsPageHeader.swift; sourceTree = "<group>"; };
 		C7574FED22174F4900B2487A /* AppsHeaderHorizontalController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppsHeaderHorizontalController.swift; sourceTree = "<group>"; };
 		C7574FEF221750E800B2487A /* AppsHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppsHeaderCell.swift; sourceTree = "<group>"; };
+		C7574FF3221792DD00B2487A /* AppGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppGroup.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				C7574FA722124B3C00B2487A /* SearchResult.swift */,
+				C7574FF3221792DD00B2487A /* AppGroup.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -323,6 +326,7 @@
 				C74A89D1220E472D00B61711 /* ViewController.swift in Sources */,
 				C74A89CF220E472D00B61711 /* AppDelegate.swift in Sources */,
 				C7574FA822124B3C00B2487A /* SearchResult.swift in Sources */,
+				C7574FF4221792DD00B2487A /* AppGroup.swift in Sources */,
 				C7574FD52216029800B2487A /* AppsPageController.swift in Sources */,
 				C7574FF0221750E800B2487A /* AppsHeaderCell.swift in Sources */,
 				C7574FA02212006400B2487A /* UIView+Layout.swift in Sources */,
