@@ -30,6 +30,7 @@
 		C7574FEE22174F4900B2487A /* AppsHeaderHorizontalController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7574FED22174F4900B2487A /* AppsHeaderHorizontalController.swift */; };
 		C7574FF0221750E800B2487A /* AppsHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7574FEF221750E800B2487A /* AppsHeaderCell.swift */; };
 		C7574FF4221792DD00B2487A /* AppGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7574FF3221792DD00B2487A /* AppGroup.swift */; };
+		C7ADCC8A221B28FC0076AADA /* SocialApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7ADCC89221B28FC0076AADA /* SocialApp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +61,7 @@
 		C7574FED22174F4900B2487A /* AppsHeaderHorizontalController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppsHeaderHorizontalController.swift; sourceTree = "<group>"; };
 		C7574FEF221750E800B2487A /* AppsHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppsHeaderCell.swift; sourceTree = "<group>"; };
 		C7574FF3221792DD00B2487A /* AppGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppGroup.swift; sourceTree = "<group>"; };
+		C7ADCC89221B28FC0076AADA /* SocialApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialApp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +147,7 @@
 			children = (
 				C7574FA722124B3C00B2487A /* SearchResult.swift */,
 				C7574FF3221792DD00B2487A /* AppGroup.swift */,
+				C7ADCC89221B28FC0076AADA /* SocialApp.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -325,6 +328,7 @@
 			files = (
 				C74A89D1220E472D00B61711 /* ViewController.swift in Sources */,
 				C74A89CF220E472D00B61711 /* AppDelegate.swift in Sources */,
+				C7ADCC8A221B28FC0076AADA /* SocialApp.swift in Sources */,
 				C7574FA822124B3C00B2487A /* SearchResult.swift in Sources */,
 				C7574FF4221792DD00B2487A /* AppGroup.swift in Sources */,
 				C7574FD52216029800B2487A /* AppsPageController.swift in Sources */,
