@@ -33,6 +33,7 @@
 		C7ADCC8A221B28FC0076AADA /* SocialApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7ADCC89221B28FC0076AADA /* SocialApp.swift */; };
 		C7ADCC94221C7F460076AADA /* HorizontalSnappingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7ADCC93221C7F460076AADA /* HorizontalSnappingController.swift */; };
 		C7ADCC96221C82460076AADA /* BetterSnappingLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7ADCC95221C82460076AADA /* BetterSnappingLayout.swift */; };
+		C7ADCC9C221CAD8C0076AADA /* AppDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7ADCC9B221CAD8C0076AADA /* AppDetailController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +67,7 @@
 		C7ADCC89221B28FC0076AADA /* SocialApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialApp.swift; sourceTree = "<group>"; };
 		C7ADCC93221C7F460076AADA /* HorizontalSnappingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalSnappingController.swift; sourceTree = "<group>"; };
 		C7ADCC95221C82460076AADA /* BetterSnappingLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetterSnappingLayout.swift; sourceTree = "<group>"; };
+		C7ADCC9B221CAD8C0076AADA /* AppDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDetailController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +171,7 @@
 		C7574FD32216028D00B2487A /* Apps */ = {
 			isa = PBXGroup;
 			children = (
+				C7ADCC9A221CAD7B0076AADA /* Details */,
 				C7574FD42216029800B2487A /* AppsPageController.swift */,
 				C7574FDC221605D800B2487A /* AppsHorizontalController.swift */,
 				C7574FED22174F4900B2487A /* AppsHeaderHorizontalController.swift */,
@@ -193,6 +196,14 @@
 				C7574FEF221750E800B2487A /* AppsHeaderCell.swift */,
 			);
 			path = Apps;
+			sourceTree = "<group>";
+		};
+		C7ADCC9A221CAD7B0076AADA /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				C7ADCC9B221CAD8C0076AADA /* AppDetailController.swift */,
+			);
+			path = Details;
 			sourceTree = "<group>";
 		};
 		D997B86785344CF27E639B9F /* Pods */ = {
@@ -350,6 +361,7 @@
 				C7574FE422163AFC00B2487A /* Extensions.swift in Sources */,
 				C74A89E7220E91DC00B61711 /* AppsSearchController.swift in Sources */,
 				C7574F962210A34600B2487A /* SearchResultCell.swift in Sources */,
+				C7ADCC9C221CAD8C0076AADA /* AppDetailController.swift in Sources */,
 				C7ADCC94221C7F460076AADA /* HorizontalSnappingController.swift in Sources */,
 				C7574FDD221605D800B2487A /* AppsHorizontalController.swift in Sources */,
 				C7574FA2221204B000B2487A /* VerticalStackView.swift in Sources */,
