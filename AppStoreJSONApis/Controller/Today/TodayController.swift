@@ -10,9 +10,6 @@ import UIKit
 
 class TodayController: BaseListController, UICollectionViewDelegateFlowLayout {
     
-//    fileprivate let cellId = "cellId"
-//    fileprivate let multipleAppCellId = "multipleAppCellId"
-    
     let items = [
         TodayItem.init(category: "LIFE HACK", title: "Utilizing your Time", image: #imageLiteral(resourceName: "garden"), description: "All the tools and apps you need to intelligently organize your life the right way.", backgroundColor: .white, cellType: .single),
         
@@ -25,10 +22,6 @@ class TodayController: BaseListController, UICollectionViewDelegateFlowLayout {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-//        if let layout = collectionViewLayout as? UICollectionViewFlowLayout {
-//            layout.scrollDirection = .horizontal
-//        }
         
         navigationController?.isNavigationBarHidden = true
         
@@ -141,18 +134,6 @@ class TodayController: BaseListController, UICollectionViewDelegateFlowLayout {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath) as! BaseTodayCell
         cell.todayItem = items[indexPath.item]
         return cell
-        
-        // multiple app cell
-        // hard coded check
-//        if indexPath.item == 0 {
-//            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: multipleAppCellId, for: indexPath) as! TodayMultipleAppCell
-//            cell.todayItem = items[indexPath.item]
-//            return cell
-//        }
-//
-//        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath) as! TodayCell
-//        cell.todayItem = items[indexPath.item]
-//        return cell
     }
     
     static let cellSize: CGFloat = 500
