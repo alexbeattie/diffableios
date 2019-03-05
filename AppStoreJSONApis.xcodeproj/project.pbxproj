@@ -51,6 +51,7 @@
 		C7ADCC96221C82460076AADA /* BetterSnappingLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7ADCC95221C82460076AADA /* BetterSnappingLayout.swift */; };
 		C7ADCC9C221CAD8C0076AADA /* AppDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7ADCC9B221CAD8C0076AADA /* AppDetailController.swift */; };
 		C7ADCCA6221CD99E0076AADA /* AppDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7ADCCA5221CD99E0076AADA /* AppDetailCell.swift */; };
+		C7AE935A222F02F500C3A608 /* BackEnabledNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7AE9359222F02F500C3A608 /* BackEnabledNavigationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -102,6 +103,7 @@
 		C7ADCC95221C82460076AADA /* BetterSnappingLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetterSnappingLayout.swift; sourceTree = "<group>"; };
 		C7ADCC9B221CAD8C0076AADA /* AppDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDetailController.swift; sourceTree = "<group>"; };
 		C7ADCCA5221CD99E0076AADA /* AppDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDetailCell.swift; sourceTree = "<group>"; };
+		C7AE9359222F02F500C3A608 /* BackEnabledNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackEnabledNavigationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +124,7 @@
 				C709D00A222758F000DB3582 /* TodayController.swift */,
 				C77BB73522285DBF0079384B /* AppFullscreenController.swift */,
 				C7ADA1AD222C434900639D96 /* TodayMultipleAppsController.swift */,
+				C7AE9359222F02F500C3A608 /* BackEnabledNavigationController.swift */,
 			);
 			path = Today;
 			sourceTree = "<group>";
@@ -445,6 +448,7 @@
 				C7574FAE22134EF700B2487A /* Service.swift in Sources */,
 				C753043F221E332F00520E05 /* PreviewCell.swift in Sources */,
 				C79E282B22207CA4009BFD83 /* ReviewsController.swift in Sources */,
+				C7AE935A222F02F500C3A608 /* BackEnabledNavigationController.swift in Sources */,
 				C79E28312220C1DC009BFD83 /* Reviews.swift in Sources */,
 				C709D00B222758F000DB3582 /* TodayController.swift in Sources */,
 				C7574FE422163AFC00B2487A /* Extensions.swift in Sources */,
