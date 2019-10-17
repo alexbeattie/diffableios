@@ -22,7 +22,7 @@ class AppFullscreenController: UIViewController, UITableViewDataSource, UITableV
         print(scrollView.contentOffset.y)
         
         let translationY = -90 - UIApplication.shared.statusBarFrame.height
-        let transform = scrollView.contentOffset.y > 100 ? CGAffineTransform(translationX: 0, y: translationY) : .identity
+        let transform = scrollView.contentOffset.y > 0 ? CGAffineTransform(translationX: 0, y: translationY) : .identity
         
         UIView.animate(withDuration: 0.7, delay: 0, usingSpringWithDamping: 0.7, initialSpringVelocity: 0.7, options: .curveEaseOut, animations: {
             

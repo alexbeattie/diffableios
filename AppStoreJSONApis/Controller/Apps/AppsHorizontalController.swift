@@ -27,7 +27,7 @@ class AppsHorizontalController: HorizontalSnappingController, UICollectionViewDe
         collectionView.backgroundColor = .white
         
         collectionView.register(AppRowCell.self, forCellWithReuseIdentifier: cellId)
-        collectionView.contentInset = .init(top: 0, left: 16, bottom: 0, right: 16)
+        collectionView.contentInset = .init(top: 0, left: 16, bottom: 0, right: 0)
     }
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {

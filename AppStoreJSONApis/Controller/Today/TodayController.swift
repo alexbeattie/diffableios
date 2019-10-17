@@ -212,7 +212,8 @@ class TodayController: BaseListController, UICollectionViewDelegateFlowLayout, U
             
             self.view.layoutIfNeeded() // starts animation
             
-            self.tabBarController?.tabBar.transform = CGAffineTransform(translationX: 0, y: 100)
+//            self.tabBarController?.tabBar.transform = CGAffineTransform(translationX: 0, y: 100)
+            self.tabBarController?.tabBar.frame.origin.y = self.view.frame.size.height
             
             guard let cell = self.appFullscreenController.tableView.cellForRow(at: [0, 0]) as? AppFullscreenHeaderCell else { return }
             
@@ -252,7 +253,11 @@ class TodayController: BaseListController, UICollectionViewDelegateFlowLayout, U
             
             self.view.layoutIfNeeded()
             
-            self.tabBarController?.tabBar.transform = .identity
+//            self.tabBarController?.tabBar.transform = .identity
+            if let tabBarFrame = self.tabBarController?.tabBar.frame {
+                self.tabBarController?.tabBar.frame.origin.y = self.view.frame.size.height - tabBarFrame.height
+            }
+            
             
             guard let cell = self.appFullscreenController.tableView.cellForRow(at: [0, 0]) as? AppFullscreenHeaderCell else { return }
 //            cell.closeButton.alpha = 0
