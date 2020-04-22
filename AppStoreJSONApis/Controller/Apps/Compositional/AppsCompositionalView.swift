@@ -119,6 +119,19 @@ class CompositionalController: UICollectionViewController {
         }
         return nil
     }
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        let object = diffableDataSource.itemIdentifier(for: indexPath)
+        
+        if let object = object as? SocialApp {
+            let appDetailController = AppDetailController(appId: object.id)
+            navigationController?.pushViewController(appDetailController, animated: true)
+        } else if let object = object as? FeedResult {
+            let appDetailController = AppDetailController(appId: object.id)
+            navigationController?.pushViewController(appDetailController, animated: true)
+
+        }
+    }
     
     private func setupDiffableDatasource() {
         diffableDataSource.supplementaryViewProvider = .some({ (collectionView, kind, indexPath) -> UICollectionReusableView? in
