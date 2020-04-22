@@ -3,11 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		75D461862C3B4637648DA373 /* Pods_AppStoreJSONApis.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B546D0D826BFF199883B4174 /* Pods_AppStoreJSONApis.framework */; };
+		7861A764244F063200145108 /* LBTATools in Frameworks */ = {isa = PBXBuildFile; productRef = 7861A763244F063200145108 /* LBTATools */; };
 		C709D00B222758F000DB3582 /* TodayController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C709D00A222758F000DB3582 /* TodayController.swift */; };
 		C709D00E2227595F00DB3582 /* TodayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C709D00D2227595F00DB3582 /* TodayCell.swift */; };
 		C74A89CF220E472D00B61711 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74A89CE220E472D00B61711 /* AppDelegate.swift */; };
@@ -40,6 +41,7 @@
 		C77BB74022292ECA0079384B /* TodayItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77BB73F22292ECA0079384B /* TodayItem.swift */; };
 		C77BB744222B3BB50079384B /* TodayMultipleAppCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77BB743222B3BB50079384B /* TodayMultipleAppCell.swift */; };
 		C77BB746222B43630079384B /* BaseTodayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77BB745222B43630079384B /* BaseTodayCell.swift */; };
+		C782674423CEB617004E5063 /* AppsCompositionalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C782674323CEB617004E5063 /* AppsCompositionalView.swift */; };
 		C7922173223C3FC8006368F7 /* MusicController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7922172223C3FC8006368F7 /* MusicController.swift */; };
 		C7922176223C4050006368F7 /* TrackCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7922175223C4050006368F7 /* TrackCell.swift */; };
 		C7922178223C425C006368F7 /* MusicLoadingFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7922177223C425C006368F7 /* MusicLoadingFooter.swift */; };
@@ -95,6 +97,7 @@
 		C77BB73F22292ECA0079384B /* TodayItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayItem.swift; sourceTree = "<group>"; };
 		C77BB743222B3BB50079384B /* TodayMultipleAppCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayMultipleAppCell.swift; sourceTree = "<group>"; };
 		C77BB745222B43630079384B /* BaseTodayCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTodayCell.swift; sourceTree = "<group>"; };
+		C782674323CEB617004E5063 /* AppsCompositionalView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppsCompositionalView.swift; sourceTree = "<group>"; };
 		C7922172223C3FC8006368F7 /* MusicController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicController.swift; sourceTree = "<group>"; };
 		C7922175223C4050006368F7 /* TrackCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackCell.swift; sourceTree = "<group>"; };
 		C7922177223C425C006368F7 /* MusicLoadingFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicLoadingFooter.swift; sourceTree = "<group>"; };
@@ -118,6 +121,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				75D461862C3B4637648DA373 /* Pods_AppStoreJSONApis.framework in Frameworks */,
+				7861A764244F063200145108 /* LBTATools in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,6 +247,7 @@
 		C7574FD32216028D00B2487A /* Apps */ = {
 			isa = PBXGroup;
 			children = (
+				C782674023CE9376004E5063 /* Compositional */,
 				C7ADCC9A221CAD7B0076AADA /* Details */,
 				C7574FD42216029800B2487A /* AppsPageController.swift */,
 				C7574FDC221605D800B2487A /* AppsHorizontalController.swift */,
@@ -269,6 +274,14 @@
 				C7574FEF221750E800B2487A /* AppsHeaderCell.swift */,
 			);
 			path = Apps;
+			sourceTree = "<group>";
+		};
+		C782674023CE9376004E5063 /* Compositional */ = {
+			isa = PBXGroup;
+			children = (
+				C782674323CEB617004E5063 /* AppsCompositionalView.swift */,
+			);
+			path = Compositional;
 			sourceTree = "<group>";
 		};
 		C7922171223C3FBB006368F7 /* Music */ = {
@@ -344,6 +357,9 @@
 			dependencies = (
 			);
 			name = AppStoreJSONApis;
+			packageProductDependencies = (
+				7861A763244F063200145108 /* LBTATools */,
+			);
 			productName = AppStoreJSONApis;
 			productReference = C74A89CB220E472D00B61711 /* AppStoreJSONApis.app */;
 			productType = "com.apple.product-type.application";
@@ -372,6 +388,9 @@
 				Base,
 			);
 			mainGroup = C74A89C2220E472D00B61711;
+			packageReferences = (
+				7861A762244F063200145108 /* XCRemoteSwiftPackageReference "LBTATools" */,
+			);
 			productRefGroup = C74A89CC220E472D00B61711 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -445,6 +464,7 @@
 				C7ADCC96221C82460076AADA /* BetterSnappingLayout.swift in Sources */,
 				C74A89CF220E472D00B61711 /* AppDelegate.swift in Sources */,
 				C79E282D22207D9D009BFD83 /* ReviewCell.swift in Sources */,
+				C782674423CEB617004E5063 /* AppsCompositionalView.swift in Sources */,
 				C77BB73622285DBF0079384B /* AppFullscreenController.swift in Sources */,
 				C7922178223C425C006368F7 /* MusicLoadingFooter.swift in Sources */,
 				C7ADCC8A221B28FC0076AADA /* SocialApp.swift in Sources */,
@@ -561,7 +581,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -616,7 +636,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -633,8 +653,9 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = TU4944T6UG;
+				DEVELOPMENT_TEAM = LR4SP9C264;
 				INFOPLIST_FILE = AppStoreJSONApis/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -653,8 +674,9 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = TU4944T6UG;
+				DEVELOPMENT_TEAM = LR4SP9C264;
 				INFOPLIST_FILE = AppStoreJSONApis/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -688,6 +710,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7861A762244F063200145108 /* XCRemoteSwiftPackageReference "LBTATools" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/bhlvoong/LBTATools.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.17;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7861A763244F063200145108 /* LBTATools */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7861A762244F063200145108 /* XCRemoteSwiftPackageReference "LBTATools" */;
+			productName = LBTATools;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C74A89C3220E472D00B61711 /* Project object */;
 }
