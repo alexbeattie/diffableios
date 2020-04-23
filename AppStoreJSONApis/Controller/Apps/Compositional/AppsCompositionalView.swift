@@ -115,9 +115,29 @@ class CompositionalController: UICollectionViewController {
         } else if let object = object as? FeedResult {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "smallCellId", for: indexPath) as! AppRowCell
             cell.app = object
+            cell.getButton.addTarget(self, action: #selector(self.handleGet), for: .primaryActionTriggered)
             return cell
         }
         return nil
+    }
+    @objc func handleGet(button: UIView) {
+        print("ok")
+        var superview = button.superview
+        
+        // i want to reach the parent cell
+        while superview != nil {
+            if let cell = superview as? UICollectionViewCell {
+                guard let indexPath = self.collectionView.indexPath(for: cell) else {
+                    return
+                }
+                guard let objectIClickedOnto = diffableDataSource.itemIdentifier(for: indexPath) else { return }
+                var snapshot = diffableDataSource.snapshot()
+                snapshot.deleteItems([objectIClickedOnto])
+                diffableDataSource.apply(snapshot)
+                print(objectIClickedOnto)
+            }
+            superview = superview?.superview
+        }
     }
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
@@ -159,7 +179,7 @@ class CompositionalController: UICollectionViewController {
                     snapshot.appendItems(socialApps ?? [], toSection: .topSocial)
                     //top grossing
                     let objects = appGroup?.feed.results ?? []
-                    snapshot.appendItems(objects ?? [], toSection: .grossing)
+                    snapshot.appendItems(objects, toSection: .grossing)
                     snapshot.appendItems(gamesGroup?.feed.results ?? [], toSection: .freeGames)
                     self.diffableDataSource.apply(snapshot)
                 }
